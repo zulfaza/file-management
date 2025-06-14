@@ -13,6 +13,8 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
+    "dev:backend": "cd packages/backend && bun run dev",
+    "dev:frontend": "cd packages/frontend && bun run dev",
     "clean": "rm -rf node_modules packages/a/node_modules packages/b/node_modules bun.lockb packages/a/bun.lockb packages/b/bun.lockb"
   }
 }
