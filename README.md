@@ -128,6 +128,8 @@ bun run dev
 #### Backend Scripts (packages/backend)
 
 - `bun run dev` - Start development server with hot reload
+- `bun run build` - Build server
+- `bun run start` - start production server
 - `bun run db:generate` - Generate database migrations
 - `bun run db:migrate` - Run database migrations
 - `bun run db:studio` - Open Drizzle Studio
