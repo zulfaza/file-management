@@ -108,7 +108,7 @@ const handleDelete = () => {
   emit('delete', props.folder)
 }
 
-const handleContextMenu = (event: MouseEvent) => {
+const handleContextMenu = () => {
   emit('select', props.folder)
 }
 </script>

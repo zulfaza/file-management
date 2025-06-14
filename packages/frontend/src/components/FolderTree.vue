@@ -68,10 +68,11 @@ import { storeToRefs } from 'pinia'
 import { useFolderStore } from '@/stores/folderStore'
 import FolderTreeItem from './FolderTreeItem.vue'
 import { ChevronDown, ChevronRight, Loader2, AlertCircle } from 'lucide-vue-next'
+import type { Folder } from '@/types/folder'
 
 // Define emits
 const emit = defineEmits<{
-  'delete-folder': [folder: any]
+  'delete-folder': [folder: Folder]
 }>()
 
 const store = useFolderStore()
@@ -82,7 +83,7 @@ const { folders, isLoading, error } = storeToRefs(store)
 // Keep methods as direct store references
 const { loadFolders, toggleFolderExpansion, expandAllFolders, collapseAllFolders } = store
 
-const selectFolder = async (folder: any) => {
+const selectFolder = async (folder: Folder) => {
   await store.selectFolder(folder)
 }
 
@@ -94,7 +95,7 @@ const collapseAll = () => {
   collapseAllFolders()
 }
 
-const handleDeleteFolder = (folder: any) => {
+const handleDeleteFolder = (folder: Folder) => {
   // Emit the delete event to parent component
   emit('delete-folder', folder)
 }

@@ -73,7 +73,6 @@ interface Props {
 
 interface Emits {
   (e: 'close'): void
-  (e: 'created', folder: any): void
 }
 
 const props = defineProps<Props>()
@@ -104,7 +103,6 @@ const handleCreate = async () => {
   )
 
   if (result.success) {
-    emit('created', result.folder)
     handleCancel()
   } else {
     error.value = result.error || 'Failed to create folder'

@@ -6,7 +6,7 @@ type RequestInit = globalThis.RequestInit
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/v1'
 
 // API response types
-export interface ApiResponse<T = any> {
+export interface ApiResponse<T = unknown> {
   success: boolean
   data?: T
   error?: string
@@ -26,7 +26,7 @@ export interface FileItem {
 }
 
 // Helper function to make authenticated API calls
-async function apiCall<T = any>(
+async function apiCall<T = unknown>(
   endpoint: string,
   options: RequestInit = {},
 ): Promise<ApiResponse<T>> {

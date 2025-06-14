@@ -44,7 +44,6 @@
       :is-open="isCreateDialogOpen"
       :parent-id="selectedFolderId"
       @close="closeCreateFolderDialog"
-      @created="handleFolderCreated"
     />
 
     <!-- Delete Folder Dialog -->
@@ -91,11 +90,6 @@ const openCreateFolderDialog = () => {
 
 const closeCreateFolderDialog = () => {
   isCreateDialogOpen.value = false
-}
-
-const handleFolderCreated = (folder: any) => {
-  console.log('Folder created:', folder)
-  // The store will automatically update the UI
 }
 
 const handleDeleteFolder = (folder: Folder) => {

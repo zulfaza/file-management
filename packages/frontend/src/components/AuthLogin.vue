@@ -90,9 +90,6 @@ import { ref, computed } from 'vue'
 import { useAuthStore } from '@/stores/auth'
 import { useRouter } from 'vue-router'
 
-const emit = defineEmits<{
-  'switch-mode': [mode: 'signup']
-}>()
 const router = useRouter()
 const authStore = useAuthStore()
 
