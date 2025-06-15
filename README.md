@@ -136,8 +136,6 @@ bun run dev
 
 ## Project Structure
 
-## Technologies Used
-
 windows-explorer-web/
 ├── packages/
 │ ├── frontend/ # Vue.js frontend application
@@ -151,6 +149,8 @@ windows-explorer-web/
 ├── package.json # Root workspace configuration
 ├── tsconfig.json # TypeScript configuration
 └── README.md # This file
+
+## Technologies Used
 
 ### Frontend
 
