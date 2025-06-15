@@ -134,22 +134,6 @@ bun run dev
 - `bun run db:migrate` - Run database migrations
 - `bun run db:studio` - Open Drizzle Studio
 
-## Project Structure
-
-windows-explorer-web/
-├── packages/
-│ ├── frontend/ # Vue.js frontend application
-│ │ ├── src/ # Source code
-│ │ ├── public/ # Static assets
-│ │ └── package.json # Frontend dependencies
-│ └── backend/ # Elysia.js backend API
-│ ├── src/ # Source code
-│ ├── migrations/ # Database migrations
-│ └── package.json # Backend dependencies
-├── package.json # Root workspace configuration
-├── tsconfig.json # TypeScript configuration
-└── README.md # This file
-
 ## Technologies Used
 
 ### Frontend
